@@ -5,22 +5,12 @@ Description: My first theme
 Author: Aniket Pant
 Author URI: http://www.aniketpant.com/
 Version: 1.0
-Tags: green, leaves, sidebar at bottom, 
+Tags: green, one-column, fixed-width, threaded-comments, custom-menu, translation-ready
+License: GPL
+License URI: ?
 */
 
 @import "css/960.css";
-
-@font-face
-{
-    font-family: HEARTBRE;
-    src: url("fonts/HEARTBRE.ttf") format("truetype");
-}
-
-@font-face
-{
-    font-family: Hattori_Hanzo;
-    src: url("fonts/Hattori_Hanzo.ttf") format("truetype");
-}
 
 /* Reset.css */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,7 +40,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
 body { 
 	color: #333333;
-	font: 14px/28px Hattori_Hanzo, Georgia, 'Times New Roman', Times, serif;
+	font: 14px/28px 'Quattrocento Sans', Georgia, 'Times New Roman', Times, serif;
 	background-image: -moz-linear-gradient(100% 100% 90deg, #c5ff7a, #fff);
 }
 
@@ -99,7 +89,7 @@ h6 { font-size: 16px; }
 #header h1,
 .hentry h2,
 h3 {
-	font-family: 'HEARTBRE', Arial, Helvetica, sans-serif; /* HEARTBRE is called via @font-face */
+	font-family: 'Lobster Two', Arial, Helvetica, sans-serif; /* Lobster Two is called via @font-face */
 }
 
 hr { border: 0 solid #ccc; border-top-width: 1px; clear: both; height: 0; }
@@ -195,7 +185,7 @@ blockquote p { margin: 0; }
 }
 #menu {
 	background-color: #c5ff7a;
-        font-family: HEARTBRE;
+        font-family: Lobster Two;
 	-moz-border-radius: 50px;
 	list-style: none;
         padding: 5px 10px 0px;
@@ -399,7 +389,7 @@ blockquote p { margin: 0; }
         font-size: 28px;
 	letter-spacing: 2px;
 	text-align: center;
-	font-family: "HEARTBRE";
+	font-family: "Lobster Two";
 }
 
 #footer a
@@ -676,7 +666,7 @@ h3#reply-title {
 	line-height: 18px;
 }
 #respond .required {
-	color: #ff4b33;
+	color: #333;
 	font-weight: bold;
 }
 #respond label {
@@ -709,7 +699,7 @@ h3#reply-title {
 /*--EXTRA--*/
 
 .pagetitle {
-	font-family: HEARTBRE;
+	font-family: Lobster Two;
 }
 
 .box {

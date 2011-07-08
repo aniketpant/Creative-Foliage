@@ -12,6 +12,9 @@
     <meta name="description" content="" />
     
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lobster+Two:bold&v1' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans&v1' rel='stylesheet' type='text/css'>
     
     <!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
@@ -30,7 +33,7 @@
 
     <header id="header" class="grid_12">
     
-    	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+    	<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
     
     </header> <!-- end header -->
 	<div id="content">

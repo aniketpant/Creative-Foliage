@@ -20,21 +20,28 @@ else:
 </aside>
 
 <aside class="widget">
-	<h3><?php _e( 'Archives','html5press' ); ?></h3>
+	<h3>Links</h3>
+	<ul>
+		<?php wp_link_pages( $args ); ?>
+	</ul>
+</aside>
+
+<aside class="widget">
+	<h3><?php _e( 'Archives','foliage' ); ?></h3>
 	<ul>
 		<?php wp_get_archives( array('type' => 'monthly') ); ?>
 	</ul>
 </aside>
 
 <aside class="widget">
-	<h3><?php _e( 'Categories','html5press' ); ?></h3>
+	<h3><?php _e( 'Categories','foliage' ); ?></h3>
 	<ul>
 		<?php wp_list_categories( array('title_li' => false,'depth' => '-1') ); ?>
 	</ul>
 </aside>
 
 <aside class="widget">
-	<h3><?php _e( 'Meta','html5press' ); ?></h3>
+	<h3><?php _e( 'Meta','foliage' ); ?></h3>
 	<ul>
 		<?php wp_register(); ?>
 		<li><?php wp_loginout(); ?></li>

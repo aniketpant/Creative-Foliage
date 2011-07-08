@@ -1,16 +1,17 @@
-# Creative Foliage - A Wordpress Theme
+#Creative Foliage - A Wordpress Theme
 
-## Intro
+##Intro
+
 A wordpress theme.
 
-## Colors
+##Colors
+
 Majorly green
 
-## Sidebar
+##Sidebar
+
 It's at the bottom
 
-## To Do
-Make changes according to wordpress standards
+##Credits
 
-## Credits
 Tyler Longren
