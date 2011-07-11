@@ -1,10 +1,10 @@
 /*
 Theme Name: Creative Foliage
 Theme URI: http://www.aniketpant.com/creative-foliage
-Description: My first theme
+Description: A clean, simple theme
 Author: Aniket Pant
 Author URI: http://www.aniketpant.com/
-Version: 1.0
+Version: 1.2
 Tags: green, one-column, fixed-width, threaded-comments, custom-menu, translation-ready
 License: GPL
 License URI: ?
@@ -40,13 +40,15 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
 body { 
 	color: #333333;
-	font: 14px/28px 'Quattrocento Sans', Georgia, 'Times New Roman', Times, serif;
+	font: 14px/28px 'Quattrocento Sans', Calibri, sans-serif;
 	background-image: -moz-linear-gradient(100% 100% 90deg, #c5ff7a, #fff);
+        overflow-x: hidden;
 }
 
 body p {
 	font-size: 16px;
 	line-height: 18px;
+        font-family: 'Quattrocento Sans', Calibri, sans-serif;
         text-rendering: optimizeLegibility;
 }
 
@@ -89,7 +91,7 @@ h6 { font-size: 16px; }
 #header h1,
 .hentry h2,
 h3 {
-	font-family: 'Lobster Two', Arial, Helvetica, sans-serif; /* Lobster Two is called via @font-face */
+	font-family: 'Lobster Two', Calibri, sans-serif
 }
 
 hr { border: 0 solid #ccc; border-top-width: 1px; clear: both; height: 0; }
@@ -119,31 +121,35 @@ pre code { background: none; }
 code { background: none; font-size: 12px; }
 
 blockquote {
-	border-left: 4px solid #32CD32;
-	border-bottom: 1px solid #32CD32;
-	color: #424242;
-	font-style: italic;
-	padding: 15px 0 10px 10px;
-	margin-left: 20px;
-	text-indent: 10px;
-	-webkit-box-shadow: inset 1px -1px 1px rgba(255, 255, 255, 0.65);
-	-moz-box-shadow: inset 1px -1px 1px rgba(255, 255, 255, 0.65);
-	box-shadow: inset 1px -1px 1px rgba(255, 255, 255, 0.65);
+		border-top: 5px solid #000;
+		border-bottom: 5px solid #000;
+		margin: 1em;
+		width: 300px;
+		clear: both;
 }
 
-blockquote p { margin: 0; }
+blockquote:nth-of-type(2n+1) {
+		float: left;
+}
+
+blockquote:nth-of-type(2n) {
+		float: right;
+}
+
+blockquote p { margin: 0; padding: 0.5em; }
 
 /* Header */
 
 #header {
 	height: 115px;
+	position: relative;
 }
 
 #header h1 a {
+	position: absolute;
 	color: #1e1e1e;
 	font-size: 76px;
 	font-weight: bold;
-	float: left;
 	margin-top: 65px;
 	padding: 20px 2px;
 	letter-spacing: 2px;
@@ -159,6 +165,10 @@ blockquote p { margin: 0; }
 	-moz-transform: rotate(15deg);
         -o-transform: rotate(15deg);
 	transform: rotate(15deg);
+}
+
+#header h2 {
+        font-family: 'Lobster Two', Calibri, sans-serif;
 }
 
 /* Content */
@@ -185,7 +195,7 @@ blockquote p { margin: 0; }
 }
 #menu {
 	background-color: #c5ff7a;
-        font-family: Lobster Two;
+        font-family: 'Lobster Two', Calibri, sans-serif;
 	-moz-border-radius: 50px;
 	list-style: none;
         padding: 5px 10px 0px;
@@ -282,6 +292,15 @@ blockquote p { margin: 0; }
 
 .hentry p { padding-right: 30px; }
 
+.hentry p:first-letter {
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        float: left;
+        font-size: 24px;
+}
+
 .hentry p a {
 	color: #000;
 	font-weight: bold;
@@ -299,7 +318,6 @@ blockquote p { margin: 0; }
 	display: block;
 	font-size: 54px;
 	font-weight: bold;
-	margin-left: 10px;
 	letter-spacing: 2px;
 	-webkit-transition: opacity 0.15s ease-in-out;
 	-moz-transition: opacity 0.15s ease-in-out;
@@ -313,7 +331,7 @@ blockquote p { margin: 0; }
 	text-shadow: none;
 }
 
-.hentry h3 { margin: 30px 0; line-height: 30px; }
+.hentry h3 { line-height: 30px; }
 .hentry h3 a { color: #000; text-shadow: 1px 1px 1px #228B22; }
 .hentry h3 a:hover { color: #fff; text-shadow: 1px 1px 1px #000; }
 
@@ -346,11 +364,9 @@ blockquote p { margin: 0; }
 }
 
 .widget {
-        display: inline-block;
-	overflow: hidden;
-	padding-top: 15px;
-        float: left;
-        margin-left: 100px;
+    	display: inline-table;
+    	overflow: hidden;
+    	width: 30%;
 }
 
 .widget li { line-height: 30px; }
@@ -369,6 +385,10 @@ blockquote p { margin: 0; }
 	-o-transform: rotate(20deg);
 	transform: rotate(20deg);
 }
+.widget h3 {
+	color: #333;
+        text-shadow: 1px 1px 1px #999;
+}
 .widget h3 a {
 	color: #333;
 }
@@ -383,13 +403,13 @@ blockquote p { margin: 0; }
 /* Footer */
 #footer
 {
-        border-top: 2px solid #fff;
-        padding-top: 10px;
-        width: 100%;
-        font-size: 28px;
-	letter-spacing: 2px;
-	text-align: center;
-	font-family: "Lobster Two";
+		border-top: 2px solid #fff;
+		padding-top: 10px;
+		width: 100%;
+		font-size: 18px;
+		letter-spacing: 2px;
+		text-align: right;
+		font-family: "Lobster Two", Calibri, sans-serif;
 }
 
 #footer a
@@ -598,7 +618,11 @@ img#wpstats {
 	position: absolute;
 	top: 4px;
 	left: 0;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
 }
+
 .comment-author {
 }
 .comment-author cite {
@@ -610,7 +634,6 @@ img#wpstats {
 	font-style: italic;
 }
 .commentlist .even {
-	background: #D8D8D8;
 }
 .commentlist .bypostauthor {
 }
@@ -725,24 +748,28 @@ h3#reply-title {
         transition: all 0.2s ease-in-out;
 }
 
+.bg-image {
+    position: absolute;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    z-index: -1;
+}
+
 #image1
 {
-    position: absolute;
-    float: right;
     background: url("images/img01.png") no-repeat;
-    right: -440px;
-    top: -300px;
     width: 400px;
     height: 429px;
+    right: -50px;
+    top: -50px;
 }
 
 #image2
 {
-    position: absolute;
-    float: left;
-    left: -250px;
-    bottom: -180px;
     background: url("images/img02.png") no-repeat;
     width: 400px;
     height: 318px;
+    top: 90%;
+    left: -50px;
 }

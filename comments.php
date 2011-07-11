@@ -48,10 +48,10 @@
 			
 				<?php
 					/* Loop through and list the comments. Tell wp_list_comments()
-					 * to use foliage_list_comments() to format the comments.
-					 * See foliage_list_comments() in foliage/functions.php for more.
+					 * to use echo_list_comments() to format the comments.
+					 * See echo_list_comments() in foliage/functions.php for more.
 					 */
-					wp_list_comments( array( 'callback' => 'foliage_list_comments' ) );
+					wp_list_comments( array( 'callback' => 'echo_list_comments' ) );
 				?>
 			</ol>
 

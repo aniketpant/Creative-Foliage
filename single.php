@@ -2,8 +2,6 @@
 <?php global $foliage_options; $foliage_settings = get_option( 'foliage_options', $foliage_options ); ?>
 <div id="main" class="grid_8 alpha">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div id="image1"></div>
-    <div id="image2"></div>
     <div class="box">
         <article <?php post_class(); ?>>
         
